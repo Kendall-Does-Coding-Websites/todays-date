@@ -3,37 +3,13 @@
 <head>
     <title>Current Date</title>
     <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #fff;
-            color: #f00;
-            font-family: 'Parisienne', cursive;
-            font-size: 5em;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            user-select: none;
-            -ms-user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-        }
-        .center {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="center">
-        <script>
-            var today = new Date();
-            var date = today.getDate();
-            var month = today.getMonth() + 1;
-            var year = today.getFullYear();
-            document.write(month + '/' + date + '/' + year);
-        </script>
+    <div class="center" id="main">
+
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
