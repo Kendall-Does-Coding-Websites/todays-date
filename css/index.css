@@ -1,19 +1,35 @@
 body {
-    background-color: #fff;
-    color: #f00;
-    font-family: 'Parisienne', cursive;
-    font-size: 5em;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
+  color: #f00;
+  font-family: "Parisienne", cursive;
+  font-size: 6em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
+
 .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  background: linear-gradient(-45deg, #e3b0a1, #df9a9a, #ea9696, #d0959f);
+  background-size: 400% 400%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
